@@ -10,39 +10,48 @@
   <body>
     <main class="page">
       <header class="hero">
-        <p class="eyebrow">Επίσημα Στοιχεία</p>
-        <h1>Στοιχεία Εταιρείας</h1>
-        <p class="subtitle">KARYPI CONSULTING ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.</p>
+        <div>
+          <p class="eyebrow" data-i18n="eyebrow">Επίσημα Στοιχεία</p>
+          <h1 data-i18n="page_title">Στοιχεία Εταιρείας</h1>
+          <p class="subtitle" data-i18n="company_name">KARYPI CONSULTING ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.</p>
+        </div>
+
+        <div class="lang-switch" role="group" aria-label="Language switcher">
+          <button class="lang-btn is-active" type="button" data-lang="el">ΕΛ</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+        </div>
       </header>
 
-      <nav class="tabs" aria-label="Περιεχόμενο">
-        <button class="tab is-active" type="button" data-tab-trigger="company" aria-selected="true">Στοιχεία</button>
-        <button class="tab" type="button" data-tab-trigger="balances" aria-selected="false">Ισολογισμοί</button>
-      </nav>
+      <div class="controls-row">
+        <nav class="tabs" aria-label="Περιεχόμενο">
+          <button class="tab is-active" type="button" data-tab-trigger="company" aria-selected="true" data-i18n="tab_info">Στοιχεία</button>
+          <button class="tab" type="button" data-tab-trigger="balances" aria-selected="false" data-i18n="tab_balances">Ισολογισμοί</button>
+        </nav>
+      </div>
 
       <section data-tab-panel="company">
         <section class="card" aria-labelledby="company-heading">
-          <h2 id="company-heading">Στοιχεία εταιρείας</h2>
+          <h2 id="company-heading" data-i18n="section_company">Στοιχεία εταιρείας</h2>
           <dl class="data-grid">
-            <dt>Επωνυμία εταιρείας</dt>
-            <dd>KARYPI CONSULTING ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.</dd>
+            <dt data-i18n="label_company_name">Επωνυμία εταιρείας</dt>
+            <dd data-i18n="value_company_name">KARYPI CONSULTING ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.</dd>
 
-            <dt>Διακριτικός τίτλος</dt>
+            <dt data-i18n="label_trade_name">Διακριτικός τίτλος</dt>
             <dd>KARYPI CONSULTING</dd>
 
-            <dt>Αγγλική Επωνυμία</dt>
+            <dt data-i18n="label_english_name">Αγγλική Επωνυμία</dt>
             <dd>KARYPI CONSULTING SINGLE MEMBER P.C.</dd>
 
-            <dt>Διεύθυνση</dt>
-            <dd>ΑΣΤΥΠΑΛΑΙΑΣ 11, ΒΟΥΛΓΑΡΗ, ΘΕΣΣΑΛΟΝΙΚΗΣ / ΘΕΣΣΑΛΟΝΙΚΗΣ, 54248</dd>
+            <dt data-i18n="label_address">Διεύθυνση</dt>
+            <dd data-i18n="value_address_long">ΑΣΤΥΠΑΛΑΙΑΣ 11, ΒΟΥΛΓΑΡΗ, ΘΕΣΣΑΛΟΝΙΚΗΣ / ΘΕΣΣΑΛΟΝΙΚΗΣ, 54248</dd>
 
-            <dt>Πόλη</dt>
-            <dd>ΘΕΣΣΑΛΟΝΙΚΗ</dd>
+            <dt data-i18n="label_city">Πόλη</dt>
+            <dd data-i18n="value_city">ΘΕΣΣΑΛΟΝΙΚΗ</dd>
 
-            <dt>Νομός</dt>
-            <dd>ΘΕΣΣΑΛΟΝΙΚΗΣ</dd>
+            <dt data-i18n="label_region">Νομός</dt>
+            <dd data-i18n="value_region">ΘΕΣΣΑΛΟΝΙΚΗΣ</dd>
 
-            <dt>Τηλέφωνο</dt>
+            <dt data-i18n="label_phone">Τηλέφωνο</dt>
             <dd><a href="tel:+302310302463">2310302463</a></dd>
 
             <dt>Email</dt>
@@ -52,101 +61,100 @@
             <dd>803126600</dd>
 
             <dt>ΔΟΥ</dt>
-            <dd>Ζ' ΘΕΣΣΑΛΟΝΙΚΗΣ</dd>
+            <dd data-i18n="value_doy">Ζ' ΘΕΣΣΑΛΟΝΙΚΗΣ</dd>
 
-            <dt>Νομική Μορφή</dt>
-            <dd>ΜΟΝΟΠΡΟΣΩΠΗ ΙΔΙΩΤΙΚΗ ΚΕΦΑΛΑΙΟΥΧΙΚΗ ΕΤΑΙΡΕΙΑ (Ι.Κ.Ε.)</dd>
+            <dt data-i18n="label_legal_form">Νομική Μορφή</dt>
+            <dd data-i18n="value_legal_form">ΜΟΝΟΠΡΟΣΩΠΗ ΙΔΙΩΤΙΚΗ ΚΕΦΑΛΑΙΟΥΧΙΚΗ ΕΤΑΙΡΕΙΑ (Ι.Κ.Ε.)</dd>
 
-            <dt>Ημερομηνία Σύστασης</dt>
-            <dd>11 Ιανουαρίου 2026</dd>
+            <dt data-i18n="label_formation_date">Ημερομηνία Σύστασης</dt>
+            <dd data-i18n="value_formation_date">11 Ιανουαρίου 2026</dd>
 
-            <dt>Αρ. Γ.Ε.ΜΗ.</dt>
+            <dt data-i18n="label_gemi">Αρ. Γ.Ε.ΜΗ.</dt>
             <dd>190181806000</dd>
 
-            <dt>Εταιρικό Κεφάλαιο</dt>
+            <dt data-i18n="label_capital">Εταιρικό Κεφάλαιο</dt>
             <dd>15.000,00 €</dd>
 
-            <dt>Διάρκεια Εταιρίας</dt>
-            <dd>ΑΟΡΙΣΤΟΥ ΧΡΟΝΟΥ</dd>
+            <dt data-i18n="label_duration">Διάρκεια Εταιρίας</dt>
+            <dd data-i18n="value_duration">ΑΟΡΙΣΤΟΥ ΧΡΟΝΟΥ</dd>
 
-            <dt>Λήξη Διαχειριστικής Περιόδου</dt>
+            <dt data-i18n="label_period_end">Λήξη Διαχειριστικής Περιόδου</dt>
             <dd>31/12</dd>
 
-            <dt>Ημ. λήξης 1ης Διαχ. Περιόδου</dt>
+            <dt data-i18n="label_first_period_end">Ημ. λήξης 1ης Διαχ. Περιόδου</dt>
             <dd>31/12/2026</dd>
           </dl>
         </section>
 
         <section class="card" aria-labelledby="manager-heading">
-          <h2 id="manager-heading">Διαχειριστής</h2>
+          <h2 id="manager-heading" data-i18n="section_manager">Διαχειριστής</h2>
           <dl class="data-grid">
-            <dt>Ονοματεπώνυμο</dt>
+            <dt data-i18n="label_full_name">Ονοματεπώνυμο</dt>
             <dd>ΠΑΓΩΝΑ ΚΑΡΥΠΗ</dd>
 
-            <dt>Πατρώνυμο</dt>
+            <dt data-i18n="label_father_name">Πατρώνυμο</dt>
             <dd>ΝΙΚΟΛΑΟΣ</dd>
 
             <dt>Α.Φ.Μ.</dt>
             <dd>024543928</dd>
 
             <dt>Δ.Ο.Υ.</dt>
-            <dd>Ζ' ΘΕΣΣΑΛΟΝΙΚΗΣ</dd>
+            <dd data-i18n="value_doy">Ζ' ΘΕΣΣΑΛΟΝΙΚΗΣ</dd>
 
-            <dt>Διεύθυνση</dt>
-            <dd>ΑΣΤΥΠΑΛΑΙΑΣ 11, ΒΟΥΛΓΑΡΗ 17, ΘΕΣΣΑΛΟΝΙΚΗΣ / ΘΕΣΣΑΛΟΝΙΚΗΣ, 54248</dd>
+            <dt data-i18n="label_address">Διεύθυνση</dt>
+            <dd data-i18n="value_address_manager">ΑΣΤΥΠΑΛΑΙΑΣ 11, ΒΟΥΛΓΑΡΗ 17, ΘΕΣΣΑΛΟΝΙΚΗΣ / ΘΕΣΣΑΛΟΝΙΚΗΣ, 54248</dd>
           </dl>
         </section>
 
         <section class="card" aria-labelledby="partners-heading">
-          <h2 id="partners-heading">Στοιχεία Εταίρων</h2>
+          <h2 id="partners-heading" data-i18n="section_partners">Στοιχεία Εταίρων</h2>
           <dl class="data-grid">
-            <dt>Ονοματεπώνυμο</dt>
+            <dt data-i18n="label_full_name">Ονοματεπώνυμο</dt>
             <dd>ΠΑΓΩΝΑ ΚΑΡΥΠΗ</dd>
 
-            <dt>Πατρώνυμο</dt>
+            <dt data-i18n="label_father_name">Πατρώνυμο</dt>
             <dd>ΝΙΚΟΛΑΟΣ</dd>
 
             <dt>Α.Φ.Μ.</dt>
             <dd>024543928</dd>
 
             <dt>Δ.Ο.Υ.</dt>
-            <dd>Ζ' ΘΕΣΣΑΛΟΝΙΚΗΣ</dd>
+            <dd data-i18n="value_doy">Ζ' ΘΕΣΣΑΛΟΝΙΚΗΣ</dd>
 
-            <dt>Διεύθυνση</dt>
-            <dd>ΑΣΤΥΠΑΛΑΙΑΣ 11, ΒΟΥΛΓΑΡΗ 17, ΘΕΣΣΑΛΟΝΙΚΗΣ / ΘΕΣΣΑΛΟΝΙΚΗΣ, 54248</dd>
+            <dt data-i18n="label_address">Διεύθυνση</dt>
+            <dd data-i18n="value_address_manager">ΑΣΤΥΠΑΛΑΙΑΣ 11, ΒΟΥΛΓΑΡΗ 17, ΘΕΣΣΑΛΟΝΙΚΗΣ / ΘΕΣΣΑΛΟΝΙΚΗΣ, 54248</dd>
 
-            <dt>Είδος Εισφοράς</dt>
-            <dd>ΚΕΦΑΛΑΙΟΥΧΙΚΕΣ</dd>
+            <dt data-i18n="label_contribution_type">Είδος Εισφοράς</dt>
+            <dd data-i18n="value_contribution_type">ΚΕΦΑΛΑΙΟΥΧΙΚΕΣ</dd>
 
-            <dt>Εταιρικά Μερίδια</dt>
+            <dt data-i18n="label_shares">Εταιρικά Μερίδια</dt>
             <dd>1.500</dd>
 
-            <dt>Ονομ. Αξία Μεριδίων</dt>
+            <dt data-i18n="label_share_value">Ονομ. Αξία Μεριδίων</dt>
             <dd>10,00 €</dd>
 
-            <dt>Ποσοστό Συμμετοχής</dt>
+            <dt data-i18n="label_participation">Ποσοστό Συμμετοχής</dt>
             <dd>100%</dd>
           </dl>
         </section>
       </section>
 
       <section class="card" data-tab-panel="balances" hidden>
-        <h2>Ισολογισμοί</h2>
-        <p class="empty-state">Δεν υπάρχουν ισολογισμοί ακόμα.</p>
+        <h2 data-i18n="section_balances">Ισολογισμοί</h2>
+        <p class="empty-state" data-i18n="balances_empty">Δεν υπάρχουν ισολογισμοί ακόμα.</p>
       </section>
-
     </main>
 
-    <footer class="footer">
-      <div class="footer-inner">
-        <h2>Στοιχεία επικοινωνίας</h2>
-        <p>KARYPI CONSULTING</p>
-        <p>Διεύθυνση: ΑΣΤΥΠΑΛΑΙΑΣ 11, Τ.Κ.: 54248 ΘΕΣΣΑΛΟΝΙΚΗ</p>
-        <p>Πόλη: ΘΕΣΣΑΛΟΝΙΚΗ</p>
-        <p>Νομός: ΘΕΣΣΑΛΟΝΙΚΗΣ</p>
-        <p>Τηλέφωνο: <a href="tel:+302310302463">2310 302463</a></p>
-        <p>Email: <a href="mailto:karypi.peggy@gmail.com">karypi.peggy@gmail.com</a></p>
-        <p class="copyright">
+    <footer class="footer-wrap">
+      <div class="footer-card">
+        <h2 data-i18n="footer_title">Στοιχεία επικοινωνίας</h2>
+        <p class="footer-company">KARYPI CONSULTING</p>
+        <p data-i18n="footer_address">Διεύθυνση: ΑΣΤΥΠΑΛΑΙΑΣ 11, Τ.Κ.: 54248 ΘΕΣΣΑΛΟΝΙΚΗ</p>
+        <p data-i18n="footer_city">Πόλη: ΘΕΣΣΑΛΟΝΙΚΗ</p>
+        <p data-i18n="footer_region">Νομός: ΘΕΣΣΑΛΟΝΙΚΗΣ</p>
+        <p><span data-i18n="footer_phone_label">Τηλέφωνο:</span> <a href="tel:+302310302463">2310 302463</a></p>
+        <p><span>Email:</span> <a href="mailto:karypi.peggy@gmail.com">karypi.peggy@gmail.com</a></p>
+        <p class="copyright" data-i18n="footer_copyright">
           © 2026 KARYPI CONSULTING ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε. Με επιφύλαξη παντός δικαιώματος.
         </p>
       </div>
@@ -156,9 +164,108 @@
       (() => {
         const triggers = document.querySelectorAll("[data-tab-trigger]");
         const panels = document.querySelectorAll("[data-tab-panel]");
-        if (!triggers.length || !panels.length) return;
+        const langButtons = document.querySelectorAll("[data-lang]");
+        const i18nNodes = document.querySelectorAll("[data-i18n]");
 
-        function activate(name) {
+        const translations = {
+          el: {
+            page_title: "Στοιχεία Εταιρείας",
+            eyebrow: "Επίσημα Στοιχεία",
+            company_name: "KARYPI CONSULTING ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.",
+            tab_info: "Στοιχεία",
+            tab_balances: "Ισολογισμοί",
+            section_company: "Στοιχεία εταιρείας",
+            section_manager: "Διαχειριστής",
+            section_partners: "Στοιχεία Εταίρων",
+            section_balances: "Ισολογισμοί",
+            balances_empty: "Δεν υπάρχουν ισολογισμοί ακόμα.",
+            label_company_name: "Επωνυμία εταιρείας",
+            label_trade_name: "Διακριτικός τίτλος",
+            label_english_name: "Αγγλική Επωνυμία",
+            label_address: "Διεύθυνση",
+            label_city: "Πόλη",
+            label_region: "Νομός",
+            label_phone: "Τηλέφωνο",
+            label_legal_form: "Νομική Μορφή",
+            label_formation_date: "Ημερομηνία Σύστασης",
+            label_gemi: "Αρ. Γ.Ε.ΜΗ.",
+            label_capital: "Εταιρικό Κεφάλαιο",
+            label_duration: "Διάρκεια Εταιρίας",
+            label_period_end: "Λήξη Διαχειριστικής Περιόδου",
+            label_first_period_end: "Ημ. λήξης 1ης Διαχ. Περιόδου",
+            label_full_name: "Ονοματεπώνυμο",
+            label_father_name: "Πατρώνυμο",
+            label_contribution_type: "Είδος Εισφοράς",
+            label_shares: "Εταιρικά Μερίδια",
+            label_share_value: "Ονομ. Αξία Μεριδίων",
+            label_participation: "Ποσοστό Συμμετοχής",
+            value_address_long: "ΑΣΤΥΠΑΛΑΙΑΣ 11, ΒΟΥΛΓΑΡΗ, ΘΕΣΣΑΛΟΝΙΚΗΣ / ΘΕΣΣΑΛΟΝΙΚΗΣ, 54248",
+            value_city: "ΘΕΣΣΑΛΟΝΙΚΗ",
+            value_region: "ΘΕΣΣΑΛΟΝΙΚΗΣ",
+            value_doy: "Ζ' ΘΕΣΣΑΛΟΝΙΚΗΣ",
+            value_legal_form: "ΜΟΝΟΠΡΟΣΩΠΗ ΙΔΙΩΤΙΚΗ ΚΕΦΑΛΑΙΟΥΧΙΚΗ ΕΤΑΙΡΕΙΑ (Ι.Κ.Ε.)",
+            value_formation_date: "11 Ιανουαρίου 2026",
+            value_duration: "ΑΟΡΙΣΤΟΥ ΧΡΟΝΟΥ",
+            value_address_manager: "ΑΣΤΥΠΑΛΑΙΑΣ 11, ΒΟΥΛΓΑΡΗ 17, ΘΕΣΣΑΛΟΝΙΚΗΣ / ΘΕΣΣΑΛΟΝΙΚΗΣ, 54248",
+            value_contribution_type: "ΚΕΦΑΛΑΙΟΥΧΙΚΕΣ",
+            footer_title: "Στοιχεία επικοινωνίας",
+            footer_address: "Διεύθυνση: ΑΣΤΥΠΑΛΑΙΑΣ 11, Τ.Κ.: 54248 ΘΕΣΣΑΛΟΝΙΚΗ",
+            footer_city: "Πόλη: ΘΕΣΣΑΛΟΝΙΚΗ",
+            footer_region: "Νομός: ΘΕΣΣΑΛΟΝΙΚΗΣ",
+            footer_phone_label: "Τηλέφωνο:",
+            footer_copyright: "© 2026 KARYPI CONSULTING ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε. Με επιφύλαξη παντός δικαιώματος."
+          },
+          en: {
+            page_title: "Company Information",
+            eyebrow: "Official Information",
+            company_name: "KARYPI CONSULTING SINGLE MEMBER P.C.",
+            value_company_name: "KARYPI CONSULTING SINGLE MEMBER P.C.",
+            tab_info: "Information",
+            tab_balances: "Financial Statements",
+            section_company: "Company Details",
+            section_manager: "Manager",
+            section_partners: "Partner Details",
+            section_balances: "Financial Statements",
+            balances_empty: "No financial statements available yet.",
+            label_company_name: "Company Name",
+            label_trade_name: "Trade Name",
+            label_english_name: "English Company Name",
+            label_address: "Address",
+            label_city: "City",
+            label_region: "Regional Unit",
+            label_phone: "Phone",
+            label_legal_form: "Legal Form",
+            label_formation_date: "Date of Incorporation",
+            label_gemi: "G.E.MI. Number",
+            label_capital: "Share Capital",
+            label_duration: "Company Duration",
+            label_period_end: "Fiscal Year End",
+            label_first_period_end: "End of 1st Fiscal Period",
+            label_full_name: "Full Name",
+            label_father_name: "Father's Name",
+            label_contribution_type: "Contribution Type",
+            label_shares: "Company Shares",
+            label_share_value: "Nominal Share Value",
+            label_participation: "Participation Percentage",
+            value_address_long: "11 Astypalaias St, Voulgari, Thessaloniki / Thessaloniki, 54248",
+            value_city: "THESSALONIKI",
+            value_region: "THESSALONIKI",
+            value_doy: "7th Tax Office of Thessaloniki",
+            value_legal_form: "SINGLE MEMBER PRIVATE CAPITAL COMPANY (I.K.E.)",
+            value_formation_date: "11 January 2026",
+            value_duration: "INDEFINITE DURATION",
+            value_address_manager: "11 Astypalaias St, Voulgari 17, Thessaloniki / Thessaloniki, 54248",
+            value_contribution_type: "CAPITAL CONTRIBUTIONS",
+            footer_title: "Contact Information",
+            footer_address: "Address: 11 Astypalaias St, P.C.: 54248 Thessaloniki",
+            footer_city: "City: Thessaloniki",
+            footer_region: "Regional Unit: Thessaloniki",
+            footer_phone_label: "Phone:",
+            footer_copyright: "© 2026 KARYPI CONSULTING SINGLE MEMBER P.C. All rights reserved."
+          }
+        };
+
+        function activateTab(name) {
           triggers.forEach((btn) => {
             const isActive = btn.getAttribute("data-tab-trigger") === name;
             btn.classList.toggle("is-active", isActive);
@@ -170,11 +277,39 @@
           });
         }
 
+        function setLanguage(lang) {
+          const dict = translations[lang] || translations.el;
+          i18nNodes.forEach((node) => {
+            const key = node.getAttribute("data-i18n");
+            if (dict[key]) node.textContent = dict[key];
+          });
+
+          document.documentElement.lang = lang;
+          document.title = `${dict.page_title} | KARYPI CONSULTING`;
+          localStorage.setItem("site-lang", lang);
+
+          langButtons.forEach((btn) => {
+            const active = btn.getAttribute("data-lang") === lang;
+            btn.classList.toggle("is-active", active);
+            btn.setAttribute("aria-pressed", active ? "true" : "false");
+          });
+        }
+
         triggers.forEach((btn) => {
           btn.addEventListener("click", () => {
-            activate(btn.getAttribute("data-tab-trigger"));
+            activateTab(btn.getAttribute("data-tab-trigger"));
           });
         });
+
+        langButtons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            setLanguage(btn.getAttribute("data-lang"));
+          });
+        });
+
+        const savedLang = localStorage.getItem("site-lang");
+        setLanguage(savedLang === "en" ? "en" : "el");
+        activateTab("company");
       })();
     </script>
   </body>
