@@ -165,20 +165,36 @@ dd {
   font-size: 1rem;
 }
 
+.purpose-intro {
+  margin: 0;
+  color: #2a4656;
+  font-weight: 600;
+}
+
+.purpose-list {
+  margin: 0.8rem 0 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.42rem;
+}
+
+.purpose-list li {
+  line-height: 1.4;
+}
+
 a {
   color: #0a5f92;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
 }
 
-.footer-wrap {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 1rem 2.1rem;
+.page-footer {
+  margin-top: 1.05rem;
+  padding-bottom: 0.65rem;
 }
 
 .footer-card {
-  margin-top: 0.35rem;
+  margin-top: 0;
   border-top: 4px solid #d9e9f3;
 }
 
@@ -263,5 +279,9 @@ a {
 
   .footer-grid dt {
     margin-top: 0.52rem;
+  }
+
+  .purpose-list {
+    gap: 0.35rem;
   }
 }
